@@ -1,4 +1,3 @@
-
 # This is a basic workflow to help you get started with Actions
 
 name: CI
@@ -78,5 +77,5 @@ jobs:
         run: |-
           kubectl apply -f deployment.yaml
           kubectl apply -f service.yaml
-          kubectl set image deployment/category-management-deployment -n=ctse category-management=it19155944/product-management:${{ github.sha }}
+          kubectl set image deployment/category-management-deployment -n=ctse category-management=it19170244/product-management:${{ github.sha }}
           kubectl rollout status deployment/category-management-deployment -n ctse
