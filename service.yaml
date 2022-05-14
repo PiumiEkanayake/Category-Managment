@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: ctse
+  name: category-management-service
+spec:
+  selector:
+    app: category-management
+  ports:
+    - protocol: TCP
+      port: 3004
+      targetPort: 3004
+  type: LoadBalancer
+  publishNotReadyAddresses: true
