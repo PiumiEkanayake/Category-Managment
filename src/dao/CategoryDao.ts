@@ -1,6 +1,6 @@
-import {Logger} from "../loaders/logger";
-import {ICategory} from "../interfaces/ICategory";
-import Category from "../models/Category";
+import {Logger} from "../loaders/logger.js";
+import {ICategory} from "../interfaces/ICategory.js";
+import Category from "../models/Category.js";
 
 
 export class CategoryDao{
